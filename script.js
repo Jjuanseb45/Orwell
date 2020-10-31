@@ -1,12 +1,12 @@
 function a() {
-    document.getElementById('bannerneu').src = 'resources/undraw_typewriter_i8xd.svg';
+    document.getElementById('bannerneu').src = 'https://svgshare.com/i/R7_.svg';
 
 }
 
 function b() {
-    document.getElementById('bannerneu').src = 'resources/undraw_studying_s3l7 (1).svg';
+    document.getElementById('bannerneu').src = 'https://svgshare.com/i/R6Z.svg';
 }
 
 function c() {
-    document.getElementById('bannerneu').src = 'resources/undraw_professor_8lrt.svg';
+    document.getElementById('bannerneu').src = 'https://svgshare.com/i/R6t.svg';
 }
