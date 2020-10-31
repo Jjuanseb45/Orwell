@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(247, 247, 247);
+    font-family: 'Raleway', sans-serif;
+    transition: 1s;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+h1 {
+    padding-left: 25px;
+    padding-top: 35px;
+}
+
+.logo {
+    display: inline;
+    height: 100px;
+    margin: 15px;
+}
+
+.grid {
+    display: grid;
+    margin: 6% 25%;
+    grid-template-columns: 50% 50%;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.practicar {
+    background-color: rgb(74, 131, 255);
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgb(153, 152, 152);
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    padding-right: 50px;
+    transition: 0.5s;
+}
+
+.aprender {
+    background-color: rgb(134, 206, 101);
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgb(153, 152, 152);
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    padding-right: 35px;
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .25s;
+    pointer-events: none;
+}
+
+.menu li:first-child:hover~.bg {
+    background: rgb(213, 223, 255);
+}
+
+.menu li:nth-child(2):hover~.bg {
+    background: rgb(199, 230, 187);
+}
+
+.practicar:hover {
+    padding-right: 70px;
+    background-color: hsl(226, 100%, 63%);
+}
+
+.aprender:hover {
+    padding-right: 55px;
+    background-color: rgb(128, 211, 89);
+}
+
+#bannerneu {
+    height: 250px;
+}
+
+.options {
+    border-right: solid 2px rgb(145, 145, 145);
+    padding: 30px;
+}
+
+@media only screen and (max-width: 770px) {
+    #bannerneu {
+        display: none;
+    }
+    .header {
+        text-align: center;
+    }
+    h1 {
+        padding: 0px;
+    }
+}
