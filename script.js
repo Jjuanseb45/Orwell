@@ -1,12 +1,12 @@
-function a() {
+function changerImageToPractice() {
     document.getElementById('bannerneu').src = 'https://svgshare.com/i/R7_.svg';
 
 }
 
-function b() {
+function changerImageToOriginal() {
     document.getElementById('bannerneu').src = 'https://svgshare.com/i/R6Z.svg';
 }
 
-function c() {
+function changerImageToLearning() {
     document.getElementById('bannerneu').src = 'https://svgshare.com/i/R6t.svg';
 }
