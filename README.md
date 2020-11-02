@@ -1,6 +1,6 @@
 # Welcome to Orwell 
 
-Hi!, On this software you'll learn some english, Me as your teacher will try you to understand everything about the basic stuff, or at least I'll try
+Hi!, On this software you'll learn some english, Me as your teacher will try to teach you everything about the basic stuff, or at least I'll try
 
 This is a work in progress, for the time being I only have html's and css's files.
 Wait changes soon! 
