@@ -2,18 +2,88 @@ body{
 	rgb(213, 223, 255);
 	color: rgb(94, 130, 206);
 	margin: 0px 0px;
+	background-color: rgb(213, 223, 255);
 	font-family: 'Raleway', sans-serif;
 }
+#icon{
+padding:20%;
 
+}
 .wrap{
 	display: grid;
-	grid-template-columns: 10% 90%;
+	grid-template-columns: 12% 88%;
+	height: 100%
+}
+
+.wrap2{
+	text-align: center;
+	margin-top: 75px;
+	display:grid;
+	grid-template-columns: 40% 60%;
 }
 
 .aside{
 	background-color: rgb(94,130,206);
 }
+select{
+	border: 0px;
+	margin-left: 10px;
+	padding: 6px;
+    	font-size: 1.0em;
+	font-family: 'Raleway', sans-serif;
 
+}
 h1{
-text-align: center;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+h2{
+	display: inline;
+}
+
+.sectionIdentifier{
+	margin: 20px;
+	height: 90px;
+	cursor: pointer;
+
+}
+
+.itemIdentifier{
+	height: 120px;
+	transition: 0.5s
+}
+
+.itemIdentifier:hover{
+	transform: rotate(-10deg); 
+}
+
+.container{
+	min-width: 115px;
+    	width: 140px;
+        padding: 50px;
+	padding-left: 20px;
+	background-color: rgb(94, 130, 206);
+	border-radius: 210px;
+	border-top-right-radius: 1000px;
+	display: block;
+	text-align: center;
+	transition: .5s;
+}
+
+.contenido{
+	margin :20px;
+}
+
+
+.resultados{
+	margin-top: 20%;
+	display: grid;
+	grid-template-columns: repeat(4, 33.3%);
+}
+
+.resultado{
+
+	text-align :center;
 }
