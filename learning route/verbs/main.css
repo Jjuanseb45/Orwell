@@ -1,0 +1,19 @@
+body{
+	rgb(213, 223, 255);
+	color: rgb(94, 130, 206);
+	margin: 0px 0px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.wrap{
+	display: grid;
+	grid-template-columns: 10% 90%;
+}
+
+.aside{
+	background-color: rgb(94,130,206);
+}
+
+h1{
+text-align: center;
+}
