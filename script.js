@@ -1,5 +1,5 @@
 function changerImageToPractice() {
-    document.getElementById('bannerneu').src = './resources/undraw_typewriter_i8xd (1).svg';
+    document.getElementById('bannerneu').src = 'https://svgshare.com/i/R7_.svg';
 
 }
 
