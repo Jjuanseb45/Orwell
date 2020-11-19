@@ -1,6 +1,9 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
 body {
     background-color: rgb(247, 247, 247);
-    font-family: 'Raleway', sans-serif;
     transition: 1s;
 }
 
@@ -102,6 +105,31 @@ ul {
 .options {
     border-right: solid 2px rgb(145, 145, 145);
     padding: 30px;
+}
+
+#creditsBtn {
+    outline: none;
+    color: #eee;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgb(129, 143, 190);
+    border: solid 0px;
+    padding: 20px;
+    padding-left: 25px;
+    box-shadow: 2px 2px 2px 1px rgb(153, 152, 152);
+    border-radius: 5px;
+    border-top-left-radius: 30px;
+    transition: .5s;
+}
+
+footer {
+    text-align: right;
+    margin-top: -10px;
+    margin-right: 17px
+}
+
+#creditsBtn:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 770px) {
