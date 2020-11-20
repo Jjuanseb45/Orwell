@@ -4,7 +4,6 @@
     <title>Verbs</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="../../resources/big-ben.png">
-
     <link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
 </head>
 
@@ -23,26 +22,29 @@
                         <img src="https://i.imgur.com/hfs0lbo.png" class="itemIdentifier">
                     </div>
                 </div>
-                <div class="contenido">
-                    <h2>Select verb: </h2><select>
-			<option>Placeholder</option>
-			<option>Placeholder</option>
+                <section class="contenido">
+                    <h2>Select verb: </h2><select id="verbs" onchange="bringProperties('Run')">
 			</select>
                     <div class="resultados">
-                        <div class=r esultado>
+                        <div class="resultado">
                             <h2> Traducción </h2>
+                            <span id="verbTraduction"></span>
                         </div>
                         <div class="resultado">
                             <h2> Pasado </h2>
+                            <span id="verbPast"></span>
                         </div>
                         <div class="resultado">
                             <h2> Futuro </h2>
+                            <span id="verbFuture"></span>
                         </div>
                     </div>
-                </div>
+                </section>
             </section>
         </div>
     </div>
 </body>
+<script src="../../data/verbs.js"></script>
+<script src="verb.js"></script>
 
 </html>

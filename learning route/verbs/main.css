@@ -79,6 +79,7 @@ select {
     padding: 6px;
     padding-right: 20px;
     font-size: 1.0em;
+    outline: none;
 }
 
 h1 {
@@ -128,9 +129,17 @@ h2 {
 .resultados {
     margin-top: 20%;
     display: grid;
-    grid-template-columns: repeat(4, 33.3%);
+    grid-template-columns: repeat(3, 33.3%);
 }
 
 .resultado {
     text-align: center;
+}
+
+span {
+    margin-top: 30px;
+    display: block;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
 }
