@@ -8,11 +8,13 @@ body {
 img {
     height: 120px;
     display: inline;
+    z-index: 2;
 }
 
 h1 {
     margin-left: 40px;
     display: inline;
+    z-index: 2;
 }
 
 header {
@@ -21,10 +23,28 @@ header {
     padding: 30px;
     padding-top: 40px;
     font-weight: bold;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px 2px 4px rgba(196, 196, 196, 0.933);
+    overflow: hidden;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(88, 119, 185);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 1;
+    transition: transform .5s;
+}
+
+header:hover::after {
+    transform: translateY(0%);
 }
 
 .grid {
@@ -71,30 +91,17 @@ label {
     cursor: pointer;
 }
 
-.ftr {
-    display: grid;
-    align-items: center;
-}
-
 .goHomeimg {
     height: 50px;
-    text-align: center;
 }
 
 .goHome {
     display: flex;
     position: absolute;
-    left: 0%;
+    top: 89%;
+    left: 2%;
     text-decoration: none;
-    margin-left: 30px;
     color: rgb(94, 130, 206);
-}
-
-footer {
-    margin-top: 60px;
-    margin-right: 17px;
-    display: grid;
-    align-items: center;
 }
 
 #goHomeTxt {

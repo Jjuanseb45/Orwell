@@ -1,141 +1,176 @@
-body{
-	rgb(213, 223, 255);
-	color: rgb(94, 130, 206);
-	margin: 0px 0px;
-	background-color: rgb(213, 223, 255);
-	font-family: 'Raleway', sans-serif;
-}
-#icon{
-padding:20%;
-
+body {
+    background-color: (213, 223, 255);
+    color: rgb(94, 130, 206);
+    margin: 0px 0px;
+    background-color: rgb(213, 223, 255);
+    font-family: 'Raleway', sans-serif;
 }
 
-span{
-color: black;
-}
-.wrap{
-	display: grid;
-	grid-template-columns: 12% 88%;
-	height: 100%
+#icon {
+    padding: 20%;
+    z-index: 2;
 }
 
-.wrap2{
-	text-align: center;
-	margin-top: 75px;
-	display:grid;
-	grid-template-columns: 32% 65%;
+.aside {
+    background-color: rgb(94, 130, 206);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
 }
 
-.aside{
-	background-color: rgb(94,130,206);
-}
-select{
-	border: 0px;
-	margin-left: 10px;
-	padding: 6px;
-    	font-size: 1.0em;
-	font-family: 'Raleway', sans-serif;
-
-}
-h1{
-	text-align: center;
-	font-size: 50px;
-	font-weight: bolder;
+.aside::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(88, 119, 185);
+    transform: translateX(100%);
+    transition: transform .5s;
+    z-index: -1;
 }
 
-h2{
-	margin: 10px;
+.aside:hover::after {
+    transform: translateX(0%);
 }
 
-.sectionIdentifier{
-	margin: 20px;
-	height: 90px;
-	cursor: pointer;
-
+a {
+    text-decoration: none;
+    text-align: center;
 }
 
-.itemIdentifier{
-	height: 120px;
-	transition: 0.5s
+p {
+    font-size: 15px;
+    color: #eee;
+    font-weight: bold;
+    transition: transform .5s;
 }
 
-
-.container{
-	min-width: 115px;
-    	width: 140px;
-        padding: 50px;
-	padding-left: 20px;
-	background-color: rgb(94, 130, 206);
-	border-radius: 210px;
-	border-top-right-radius: 1000px;
-	display: block;
-	text-align: center;
-	transition: .5s;
+a:hover p {
+    transform: scale(1.1);
 }
 
-.container:hover{
-	border-radius: 50%;
-	width: 120px;
-	padding: 40px 30px 40px 45px;
-	transform: rotate(-90deg);
+span {
+    color: black;
 }
 
-.container:hover .itemIdentifier{
-	transform: rotate(90deg);
-	padding: 0px;
-	
+.wrap {
+    display: grid;
+    grid-template-columns: 12% 88%;
+    height: 100%
 }
 
-.contenido{
-	margin :20px;
+.wrap2 {
+    text-align: center;
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 32% 65%;
 }
 
-.select{
-display: inline;
-
+select {
+    border: 0px;
+    margin-left: 10px;
+    padding: 6px;
+    font-size: 1.0em;
+    font-family: 'Raleway', sans-serif;
 }
 
-.resultados{
-	margin-top: 10%;
-	display: grid;
-	grid-template-columns: repeat(3, 35%);
-	grid-row-gap: 30px;
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
 }
 
-.resultado{
-
-	text-align :center;
+h2 {
+    margin: 10px;
 }
 
-button{
-	transition: 0.5s;
-	cursor: pointer;
-	font-weight: bold;
-	font-size: 12px;
-	color:white;
-	margin: auto;
-	margin-left: 50px;
-	padding: 17px;
-	padding-right: 27px;
-	border-radius: 20px;
-	border-top-right-radius: 50px;
-	border : 0px;
-	background-color: rgb(94,130,206);
-	font-family: 'Raleway', sans-serif;
+.sectionIdentifier {
+    margin: 20px;
+    height: 90px;
+    cursor: pointer;
 }
 
-button:hover{
-
-	transform: scale(1.1);
-
+.itemIdentifier {
+    height: 120px;
+    transition: 0.5s
 }
 
-button:focus{
-	outline: none;
+.container {
+    min-width: 115px;
+    width: 140px;
+    padding: 50px;
+    padding-left: 20px;
+    background-color: rgb(94, 130, 206);
+    border-radius: 210px;
+    border-top-right-radius: 1000px;
+    display: block;
+    text-align: center;
+    transition: .5s;
 }
 
-.settings{
-display: grid;
-grid-template-columns: 50% 50%
+.container:hover {
+    border-radius: 50%;
+    width: 120px;
+    padding: 40px 30px 40px 45px;
+    transform: rotate(-90deg);
+}
 
+.container:hover .itemIdentifier {
+    transform: rotate(90deg);
+    padding: 0px;
+}
+
+.contenido {
+    margin: 20px;
+}
+
+.select {
+    display: inline;
+}
+
+.resultados {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-row-gap: 30px;
+}
+
+.resultado {
+    text-align: center;
+}
+
+.resultadoLastLine {
+    grid-column-start: 2;
+}
+
+button {
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    margin: auto;
+    margin-left: 50px;
+    padding: 17px;
+    padding-right: 27px;
+    border-radius: 20px;
+    border-top-right-radius: 50px;
+    border: 0px;
+    background-color: rgb(94, 130, 206);
+    font-family: 'Raleway', sans-serif;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:focus {
+    outline: none;
+}
+
+.settings {
+    display: grid;
+    grid-template-columns: 50% 50%
 }
