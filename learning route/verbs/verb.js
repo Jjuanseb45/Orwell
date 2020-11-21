@@ -2,7 +2,6 @@
 
 
 fullVerbsCombobox('verbs');
-randomVerb();
 
 function bringProperties() {
     let verb = document.getElementById('verbs').value;
@@ -10,8 +9,8 @@ function bringProperties() {
         switch (verb) {
             case iterator.verbnName:
                 document.getElementById('verbTraduction').innerHTML = iterator.verbTraduction;
-                document.getElementById('verbPast').innerHTML = iterator.verbPast;
-                document.getElementById('verbFuture').innerHTML = iterator.verbFuture;
+                document.getElementById('noS').innerHTML = iterator.verbnName;
+                document.getElementById('S').innerHTML = iterator.verbS;
                 break;
             default:
                 break;

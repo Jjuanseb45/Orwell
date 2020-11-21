@@ -1,8 +1,9 @@
 /*jshint esversion: 6 */
 
 class verb {
-    constructor(verbnName, verbTraduction, verbPast, verbContinuous, verbPresentPerfect, verbFuture) {
+    constructor(verbnName, verbTraduction, verbPast, verbContinuous, verbPresentPerfect, verbFuture, verbS) {
         this.verbnName = verbnName;
+        this.verbS = verbS;
         this.verbTraduction = verbTraduction;
         this.verbPast = verbPast;
         this.verbContinuous = verbContinuous;
@@ -12,8 +13,8 @@ class verb {
 }
 
 let dataVerbs = [
-    new verb('Go', 'Ir', 'Went', 'Going', 'Gone', 'Will go'),
-    new verb('Study', 'Estudiar', 'Studied', 'Studying', 'Studied', 'Will study')
+    new verb('Go', 'Ir', 'Went', 'Going', 'Gone', 'Will go', 'Goes'),
+    new verb('Study', 'Estudiar', 'Studied', 'Studying', 'Studied', 'Will study', 'Studies')
 ];
 
 

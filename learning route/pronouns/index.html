@@ -4,7 +4,6 @@
     <title>Pronouns</title>
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="../../resources/big-ben.png">
-
     <link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
 </head>
 
@@ -26,30 +25,28 @@
                     </div>
                 </div>
                 <div class="contenido">
-                    <h2 class="select">Select person: </h2><select>
-			<option>Placeholder</option>
-			<option>Placeholder</option>
+                    <h2 class="select">Select person: </h2><select id="pronounsCombobox" onchange="bringProperties()">			
 			</select>
                     <div class="resultados">
                         <div class="resultado">
                             <h2>Subject Pronouns</h2>
-                            <span>Texto de prueba</span>
+                            <span id="subjetPronoun"></span>
                         </div>
                         <div class="resultado">
                             <h2> Object Pronouns </h2>
-                            <span>Texto de prueba</span>
+                            <span id="objectPronoun"></span>
                         </div>
                         <div class="resultado">
                             <h2> Possessive adjectives </h2>
-                            <span>Texto de prueba</span>
+                            <span id="possessiveAdjetive"></span>
                         </div>
                         <div class="resultado">
                             <h2> Possessive pronouns </h2>
-                            <span>Texto de prueba</span>
+                            <span id="possessivePronouns"></span>
                         </div>
                         <div class="resultado">
-                            <h2> Reflexive pronouns </h2>
-                            <span>Texto de prueba</span>
+                            <h2> Reflexive<br>pronouns </h2>
+                            <span id="reflexivePronoun"></span>
                         </div>
                     </div>
                 </div>
@@ -57,5 +54,7 @@
         </div>
     </div>
 </body>
+<script src="../../data/pronouns.js"></script>
+<script src="pronoun.js"></script>
 
 </html>
