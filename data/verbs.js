@@ -1,33 +1,27 @@
 /*jshint esversion: 6 */
 
 class verb {
-    constructor(verbnName, verbTraduction, verbPast, verbFuture) {
+    constructor(verbnName, verbTraduction, verbPast, verbContinuous, verbPresentPerfect, verbFuture) {
         this.verbnName = verbnName;
         this.verbTraduction = verbTraduction;
         this.verbPast = verbPast;
+        this.verbContinuous = verbContinuous;
+        this.verbPresentPerfect = verbPresentPerfect;
         this.verbFuture = verbFuture;
     }
 }
 
-let data = [
-    new verb('Run', 'Correr', 'Ran', 'Will Run'),
-    new verb('Watch', 'Ver', 'Watched', 'Will watch'),
-    new verb('Walk', 'Caminar', 'Walked', 'Will walk'),
-    new verb('Speak', 'Hablar', 'Spoke', 'Will speak'),
-    new verb('Notice', 'Darse cuenta', 'Noticed', 'Will notice'),
+let dataVerbs = [
+    new verb('Go', 'Ir', 'Went', 'Going', 'Gone', 'Will go'),
+    new verb('Study', 'Estudiar', 'Studied', 'Studying', 'Studied', 'Will study')
 ];
 
-function listVerbs() {
-    var selectBox = document.getElementById('verbs');
+
+function fullVerbsCombobox(idElement) {
+    var selectBox = document.getElementById(idElement);
     selectBox.innerHTML = "";
-    for (const iterator of data) {
+    for (const iterator of dataVerbs) {
         let option = iterator.verbnName;
         selectBox.options.add(new Option(option));
-    }
-}
-
-function verbs() {
-    for (const iterator of data) {
-        return iterator.verbnName;
     }
 }

@@ -1,11 +1,12 @@
 /*jshint esversion: 6 */
 
 
-listVerbs();
+fullVerbsCombobox('verbs');
+randomVerb();
 
 function bringProperties() {
     let verb = document.getElementById('verbs').value;
-    for (const iterator of data) {
+    for (const iterator of dataVerbs) {
         switch (verb) {
             case iterator.verbnName:
                 document.getElementById('verbTraduction').innerHTML = iterator.verbTraduction;

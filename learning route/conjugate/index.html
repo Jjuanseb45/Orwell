@@ -25,39 +25,42 @@
                     </div>
                 </div>
                 <div class="contenido">
-                    <h2 class="select">Select verb: </h2><select>
-			<option>Placeholder</option>
-			<option>Placeholder</option>
-			</select>
-                    <button>Conjugate</button>
+                    <h2 class="select">Select verb: </h2><select id="verbs"></select>
+                    <h2 class="select">Select tense: </h2><select id="tenses">
+                        <option value="verbPast">Pasado</option>
+                        <option value="verbContinuous">Presente Continuo</option>
+                        <option value="verbPresentPerfect">Presente Perfecto</option>
+                        <option value="verbFuture">Futuro</option>
+                    </select>
+                    <button onclick="conjugate()">Conjugate</button>
                     <div class="resultados">
                         <div class="resultado">
-                            <h2> I </h2>
-                            <span>Texto de prueba</span>
+                            <h2 id="iConjugated" title="I"> I </h2>
+                            <span class="verbConjugated"></span>
                         </div>
                         <div class="resultado">
-                            <h2> He </h2>
-                            <span>Texto de prueba</span>
+                            <h2 id="heConjugated" title="He"> He </h2>
+                            <span class="verbConjugated"></span>
                         </div>
                         <div class="resultado">
-                            <h2> She </h2>
-                            <span>Texto de prueba</span>
+                            <h2 id="sheConjugated" title="She"> She </h2>
+                            <span class="verbConjugated"></span>
                         </div>
                         <div class="resultado">
-                            <h2> It </h2>
-                            <span>Texto de prueba</span>
+                            <h2 id="itConjugated" title="It"> It </h2>
+                            <span class="verbConjugated"></span>
                         </div>
                         <div class="resultado">
-                            <h2> We </h2>
-                            <span>Texto de prueba</span>
+                            <h2 id="weConjuated" title="We"> We </h2>
+                            <span class="verbConjugated"></span>
                         </div>
                         <div class="resultado">
-                            <h2> They </h2>
-                            <span>Texto de prueba</span>
+                            <h2 id="theyConjugated" title="They"> They </h2>
+                            <span class="verbConjugated"></span>
                         </div>
                         <div class="resultado resultadoLastLine">
-                            <h2> You </h2>
-                            <span>Texto de prueba</span>
+                            <h2 id="youconjugated" title="You"> You </h2>
+                            <span class="verbConjugated"></span>
                         </div>
                     </div>
                 </div>
@@ -65,5 +68,7 @@
         </div>
     </div>
 </body>
+<script src="../../data/verbs.js"></script>
+<script src="conjugate.js"></script>
 
 </html>
