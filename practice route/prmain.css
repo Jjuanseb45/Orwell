@@ -9,11 +9,13 @@ img {
     /* height:120*/
     height: 120px;
     display: inline;
+    z-index: 1;
 }
 
 h1 {
     margin-left: 40px;
     display: inline;
+    z-index: 1;
 }
 
 header {
@@ -26,13 +28,35 @@ header {
     align-items: center;
     justify-content: center;
     box-shadow: 2px 2px 2px 4px rgba(196, 196, 196, 0.933);
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(136, 190, 111);
+    transform: translateY(100%);
+    transition: transform .5s;
+}
+
+header:hover::after {
+    transform: translateY(0%);
+    z-index: 0;
 }
 
 .grid {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: repeat(4, 20%);
-    margin-left: 20%;
-    margin-top: 8%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 7%;
     gap: 100px;
     box-sizing: border-box;
 }
@@ -70,6 +94,29 @@ label {
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+.goHomeimg {
+    height: 50px;
+}
+
+.goHome {
+    display: flex;
+    position: absolute;
+    top: 89%;
+    left: 2%;
+    text-decoration: none;
+    color: rgb(85, 165, 48);
+}
+
+#goHomeTxt {
+    margin-left: 20px;
+    font-weight: bolder;
+    transition: color .4s;
+}
+
+footer:hover #goHomeTxt {
+    color: black;
 }
 
 @media only screen and (max-width: 937px) {
