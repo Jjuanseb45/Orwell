@@ -6,27 +6,24 @@ let direrccionFaciles = "<img src=\"../resources/caballero.png\">";
 let direrccionMedios = "<img src=\"../resources/wizard.png\">";
 let direrccionDificiles = "<img src=\"../resources/king.png\">";
 
+function redirectHandler(idElemento, levelIdentifier, direccion, imagen) {
+    document.getElementById(idElemento).innerHTML = imagen + levelIdentifier;
+    document.getElementById(idElemento).setAttribute('href', direccion);
+}
+
+function setLevel(idElemento, nivel) {
+    document.getElementById(idElemento).addEventListener('click', e => {
+        let level = nivel;
+        localStorage.setItem("level", level);
+    });
+}
+
 if (value == 1) {
     document.getElementById('pageIdentifier').innerHTML = "Orwell: Reading";
     document.getElementById('title').innerHTML = "Reading";
-    document.getElementById('easy').innerHTML = direrccionFaciles + "Textos Fáciles";
-    document.getElementById('easy').setAttribute('href', '../reading/index.html');
-    document.getElementById('easy').addEventListener('click', e => {
-        let level = 1;
-        localStorage.setItem("level", level);
-    });
-    document.getElementById('medium').innerHTML = direrccionMedios + "Textos Medios";
-    document.getElementById('medium').setAttribute('href', '../reading/index.html');
-    document.getElementById('medium').addEventListener('click', e => {
-        let level = 2;
-        localStorage.setItem("level", level);
-    });
-    document.getElementById('hard').innerHTML = direrccionDificiles + "Textos Difíciles";
-    document.getElementById('hard').setAttribute('href', '../reading/index.html');
-    document.getElementById('hard').addEventListener('click', e => {
-        let level = 3;
-        localStorage.setItem("level", level);
-    });
+    redirectHandler('easy', 'Textos Fáciles', '../reading/index.html', direrccionFaciles);
+    redirectHandler('medium', 'Textos Medios', '../reading/index.html', direrccionMedios);
+    redirectHandler('hard', 'Textos Dificiles', '../reading/index.html', direrccionDificiles);
 
 } else if (value == 2) {
     document.getElementById('pageIdentifier').innerHTML = "Orwell: Writing";
@@ -40,11 +37,11 @@ if (value == 1) {
 } else if (value == 3) {
     document.getElementById('pageIdentifier').innerHTML = "Orwell: Speaking";
     document.getElementById('title').innerHTML = "Speaking";
-    document.getElementById('easy').innerHTML = direrccionFaciles + "Pronunciacion Fáciles";
-    document.getElementById('easy').setAttribute('href', '#');
-    document.getElementById('medium').innerHTML = direrccionMedios + "Pronunciacion Medios";
-    document.getElementById('medium').setAttribute('href', '#');
-    document.getElementById('hard').innerHTML = direrccionDificiles + "Pronunciacion Difíciles";
-    document.getElementById('hard').setAttribute('href', '#');
-
+    redirectHandler('easy', 'Pronunciaciones Fáciles', '../speaking/index.html', direrccionFaciles);
+    redirectHandler('medium', 'Pronunciacion Medios', '../speaking/index.html', direrccionMedios);
+    redirectHandler('hard', 'Pronunciacion Difícil', '../speaking/index.html', direrccionDificiles);
 }
+
+setLevel('easy', 1);
+setLevel('medium', 2);
+setLevel('hard', 3);

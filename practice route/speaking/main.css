@@ -129,30 +129,24 @@ h2 {
 .content {
     display: flex;
     align-self: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 30%;
+    width: 50%;
+    gap: 20px;
 }
 
-.textLists {
-    align-items: center;
-    padding: 50px;
-    background-color: #eee;
-    border-radius: 23px;
-    width: 30%;
-    height: 35%;
+.list {
+    width: 200px;
     text-align: left;
+    border-radius: 10px;
+    background-color: #eee;
+    padding: 20px;
+    padding-left: 40px;
+    height: 210px;
     overflow-y: scroll;
 }
 
-ul li {
-    padding: 10px;
-}
-
-ul li a {
+.list li {
     color: black;
-    font-weight: bolder;
-    transition: color .5s;
-}
-
-ul li a:hover {
-    color: rgb(40, 77, 47);
 }

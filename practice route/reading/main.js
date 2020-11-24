@@ -1,7 +1,6 @@
 /*jshint esversion: 6 */
 
 let level = parseInt(localStorage.getItem("level"));
-console.log(level);
 
 if (level === 1) {
     document.getElementById('title').innerHTML = "Lecturas Faciles";
