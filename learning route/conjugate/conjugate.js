@@ -21,7 +21,6 @@ function conjugate() {
             switch (tense) {
                 case "verbPast":
                     replaceTitle('iConjugated', '');
-                    replaceTitle('iConjugated', '');
                     replaceTitle('heConjugated', '');
                     replaceTitle('sheConjugated', '');
                     replaceTitle('itConjugated', '');

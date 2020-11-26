@@ -1,0 +1,138 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(199, 230, 187);
+    height: 100vh;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 12% 88%;
+    height: 100%
+}
+
+aside {
+    background-color: rgb(134, 206, 101);
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+aside::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(136, 190, 111);
+    transition: transform .5s;
+    z-index: -1;
+    transform: translateX(100%);
+}
+
+aside:hover::after {
+    transform: translateY(0%);
+}
+
+a {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.sectionIdentifier {
+    height: 100px;
+    margin-top: 20px;
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(134, 206, 101);
+}
+
+.content {
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 40%;
+}
+
+.test {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+}
+
+#instruction {
+    margin-top: 70px;
+}
+
+.entrada {
+    outline: none;
+    padding: 7px;
+    border: 2px solid rgba(238, 238, 238, 0);
+    transition: border .5s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.entrada:focus {
+    border-bottom: 2px solid rgb(134, 206, 101);
+}
+
+#check {
+    border: 0px;
+    padding: 15px;
+    background-color: rgb(134, 206, 101);
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgb(153, 152, 152);
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    padding-right: 35px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+#reload {
+    border: 0px;
+    padding: 15px;
+    background-color: rgb(206, 101, 101);
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 1px rgb(153, 152, 152);
+    border-radius: 5px;
+    border-top-left-radius: 30px;
+    padding-left: 30px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    position: absolute;
+    left: 52%;
+    outline: none;
+}
+
+#verbImage {
+    margin: auto;
+    margin-left: 70px;
+    height: auto;
+    width: 80%;
+}

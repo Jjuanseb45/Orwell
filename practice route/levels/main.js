@@ -25,15 +25,6 @@ if (value == 1) {
     redirectHandler('medium', 'Textos Medios', '../reading/index.html', direrccionMedios);
     redirectHandler('hard', 'Textos Dificiles', '../reading/index.html', direrccionDificiles);
 
-} else if (value == 2) {
-    document.getElementById('pageIdentifier').innerHTML = "Orwell: Writing";
-    document.getElementById('title').innerHTML = "Writing";
-    document.getElementById('easy').innerHTML = direrccionFaciles + "Escritura Fáciles";
-    document.getElementById('easy').setAttribute('href', '#');
-    document.getElementById('medium').innerHTML = direrccionMedios + "Escritura Medios";
-    document.getElementById('medium').setAttribute('href', '#');
-    document.getElementById('hard').innerHTML = direrccionDificiles + "Escritura Difíciles";
-    document.getElementById('hard').setAttribute('href', '#');
 } else if (value == 3) {
     document.getElementById('pageIdentifier').innerHTML = "Orwell: Speaking";
     document.getElementById('title').innerHTML = "Speaking";

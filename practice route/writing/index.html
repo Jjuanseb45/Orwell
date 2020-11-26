@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" type="image/png" href="../../resources/big-ben.png">
-    <title id="pageIdentifier">orwell: Reading</title>
+    <title>Orwell: Writing</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
@@ -19,19 +19,37 @@
             </a>
         </aside>
         <section>
-            <h1 id="title"></h1>
-            <div class="levels">
-                <a id="easy" class="container"><img src="../resources/caballero.png "></a>
-                <a id="medium" class="container"><img src="../resources/wizard.png "></a>
-                <a id="hard" class="container"><img src="../resources/king.png "></a>
+            <h1>Writing</h1>
+            <h2 id="instruction">Completa los espacios con el nombre del verbo en el tiempo indicado</h2>
+            <div class="content">
+                <img id="verbImage">
+                <form class="test">
+                    <div>
+                        <h2>Past</h2>
+                        <input type="text" class="entrada" id="pastAnswer">
+                    </div>
+                    <div>
+                        <h2>Present</h2>
+                        <input type="text" class="entrada" id="presentAnswer">
+                    </div>
+                    <div>
+                        <h2>Future</h2>
+                        <input type="text" class="entrada" id="futureAnswer">
+                    </div>
+                </form>
+
             </div>
+            <button id="check">Check</button>
+            <button id="reload" onclick="location.reload()">Reload</button>
         </section>
+
     </div>
 
 </body>
 <!--div>Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik " title="Freepik ">Freepik</a> from <a href="https://www.flaticon.es/ " title="Flaticon ">www.flaticon.es</a></div-->
 <!--div>Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div-->
 <!--div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div-->
-<script src="../levels/main.js"></script>
+<script src="../../data/verbs.js"></script>
+<script src="main.js"></script>
 
 </html>

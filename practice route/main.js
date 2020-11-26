@@ -5,11 +5,6 @@ document.getElementById("reading").addEventListener('click', e => {
     localStorage.setItem("key", value);
 });
 
-document.getElementById("writing").addEventListener('click', e => {
-    let value = 2;
-    localStorage.setItem("key", value);
-});
-
 document.getElementById("speaking").addEventListener('click', e => {
     let value = 3;
     localStorage.setItem("key", value);
