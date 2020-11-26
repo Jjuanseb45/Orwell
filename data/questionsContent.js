@@ -37,4 +37,13 @@ let dataQuestions = [
     new question(7, "The Menu", "The restaurant is open the whole ____", 'week'),
     new question(8, "The Menu", "What time does the restaurant opens? <br> (_ P.M)", '2'),
     new question(9, "The Menu", "What time does the restaurant closes? <br> (_ P.M)", '9'),
+    new question(1, "The Nurse", "Nelly is a _____", 'Nurse'),
+    new question(2, "The Nurse", "Is Nelly tall? (Short answer)", 'Yes'),
+    new question(3, "The Nurse", "Nelly is short and thin <br> (False or True)", 'False'),
+    new question(4, "The Nurse", "Where does Nelly work?", 'At the hospital'),
+    new question(5, "The Nurse", "At the hospital, Nelly looks after ____ people", 'Sick'),
+    new question(6, "The Nurse", "What is Nelly's hair color?", 'Brown'),
+    new question(7, "The Nurse", "Nelly is __ years old (Write the number)", '30'),
+    new question(8, "The Nurse", "What is Nelly's eyes color?", 'Green'),
+    new question(9, "The Nurse", "Since what age does Nelly need glasses? <br>(Write just the number)", '10')
 ];

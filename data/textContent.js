@@ -15,7 +15,7 @@ let menu = "Bring your family to Joe's for fast food and lots of fun, we have de
     " We have games for the children and music for the whole family. We're open the whole week, we open at 2 P.M and close at 9 P.M";
 
 let description = "Nelly is a nurse. She is thin and tall. She works at the hospital and looks after sick people, her hair color is brown <br>" +
-    " in her eyes green, she is 30 years old. She needs glasses since she was 10 years old";
+    " and her eyes green, she is 30 years old. She needs glasses since she was 10 years old";
 
 let aNewHome = "\"Francisco stands outside his new house. He reaches into his pocket and pulls out the key. He turns the key in the lock" +
     " and opens the door. <br> He steps into the living room and looks around. The paint is peeling off the walls. There is no furniture. <br>" +
