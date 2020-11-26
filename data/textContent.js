@@ -11,8 +11,8 @@ let routine = "I wake up at 6 am, then i get dressed and brush my teeths, after 
     "when am ready i go to school walking i like to see the street and the cars, i dont like the bus. During the whole two hours of class " +
     " i just want to go back to my home, where I play videogames and eats fast food, pizza is my favorite meal";
 
-let menu = "Bring your family to Joe's for great food and lots of fun, we have delicious hamburgers, hot dogs, pizza and chicken. <br>" +
-    " We have games for the children and music for the whole family";
+let menu = "Bring your family to Joe's for fast food and lots of fun, we have delicious hamburgers, hot dogs, pizza and chicken. <br>" +
+    " We have games for the children and music for the whole family. We're open the whole week, we open at 2 P.M and close at 9 P.M";
 
 let description = "Nelly is a nurse. She is thin and tall. She works at the hospital and looks after sick people, her hair color is brown <br>" +
     " in her eyes green, she is 30 years old. She needs glasses since she was 10 years old";
