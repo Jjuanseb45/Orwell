@@ -23,7 +23,7 @@ let aNewHome = "\"Francisco stands outside his new house. He reaches into his po
     " but there is a microwave on the floor on one side of the room. He wonders if it works. <br>The place looks terrible but it is all he " +
     " can afford. He covers his nose and mouth with his hand and opens the bathroom door. It is in bad condition.\"";
 
-let atTheAirport = "\"Miguel is standing in line at the airport. It is his turn and he walks to the counter. The lady at the counter asks" +
+let atTheAirport = "\"Miguel is 40 years old, is standing in line at the airport. It is his turn and he walks to the counter. The lady at the counter asks" +
     " him for his ID and she checks his flight details. Yes, he is confirmed on flight 103 from Los Angeles to Hawaii at noon. He does not " +
     " have any bags to check in but has one small carry-on bag that he will take with him. The agent prints out his boarding pass. " +
     " The airport security officers walk past him with a big dog. The dog is sniffing around people’s luggage trying to detect drugs and " +
